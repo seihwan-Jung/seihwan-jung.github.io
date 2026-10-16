@@ -139,7 +139,7 @@ p { margin: 0 0 16px; color: var(--ink-2); }
 /* ============================================================
    SECTION BANDS
    ============================================================ */
-.band { padding: 72px 0; border-top: 1px solid var(--line); }
+.band { padding: 72px 0; }
 .band--tint { background: #fff; }
 .band--tight { padding: 56px 0; }
 
