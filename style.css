@@ -38,7 +38,7 @@ body {
   margin: 0;
   background: #fff;
   color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 16.5px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -310,7 +310,6 @@ p { margin: 0 0 16px; color: var(--ink-2); }
 .eqbox {
   background: #fff; border: 1px solid var(--line);
   padding: 16px 20px; margin: 24px 0; text-align: center;
-  font-family: "Times New Roman", Times, "Nanum Myeongjo", serif;
   font-size: 16.5px; line-height: 1.8; color: var(--ink);
 }
 .eqbox--left { text-align: left; }
