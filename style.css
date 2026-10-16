@@ -109,7 +109,7 @@ p { margin: 0 0 16px; color: var(--ink-2); }
 .hero {
   background: #fff;
   color: var(--ink);
-  padding: 100px 0 56px;
+  padding: 100px 0 24px;
 }
 .hero-grid { display: grid; grid-template-columns: 1fr; gap: 56px; align-items: center; }
 .hero .kicker {
