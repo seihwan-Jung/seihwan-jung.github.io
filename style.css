@@ -8,9 +8,9 @@
   /* brand — Apple-style: near-black text, SF-blue accent, cool-gray neutrals */
   --navy:          #1d1d1f;   /* nav + hero + footer background */
   --navy-soft:     #2d2d2f;
-  --accent:        #0071e3;   /* links, highlights, buttons */
-  --accent-deep:   #0066cc;
-  --accent-wash:   #f0f6fe;   /* pale blue fill */
+  --accent:        #6e6e73;   /* links, highlights, buttons */
+  --accent-deep:   #515154;
+  --accent-wash:   #eeeef0;   /* pale gray fill */
   --tint:          #f5f5f7;   /* alternating section background */
 
   /* text */
