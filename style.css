@@ -108,7 +108,6 @@ p { margin: 0 0 16px; color: var(--ink-2); }
    ============================================================ */
 .hero {
   background: #fff;
-  border-bottom: 1px solid var(--line);
   color: var(--ink);
   padding: 100px 0 104px;
 }
@@ -140,9 +139,9 @@ p { margin: 0 0 16px; color: var(--ink-2); }
 /* ============================================================
    SECTION BANDS
    ============================================================ */
-.band { padding: 96px 0; }
-.band--tint { background: var(--tint); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.band--tight { padding: 72px 0; }
+.band { padding: 72px 0; border-top: 1px solid var(--line); }
+.band--tint { background: #fff; }
+.band--tight { padding: 56px 0; }
 
 .sec-label {
   font-size: 12.5px; font-weight: 650; letter-spacing: .1em; text-transform: uppercase;
