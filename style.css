@@ -229,7 +229,7 @@ p { margin: 0 0 16px; color: var(--ink-2); }
 }
 .work h3 { font-size: 19px; margin-bottom: 9px; font-weight: 600; }
 .work p { font-size: 14.5px; font-weight: 300; color: var(--ink); margin-bottom: 16px; flex: 1; }
-.more { font-size: 14.5px; font-weight: 600; color: var(--accent); }
+.more { font-size: 14.5px; font-weight: 300; color: var(--ink); }
 .more::after { content: " →"; transition: margin .2s var(--ease); }
 .work:hover .more::after { margin-left: 2px; }
 .work:hover .more { text-decoration: underline; }
