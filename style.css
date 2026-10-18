@@ -161,11 +161,11 @@ p { margin: 0 0 16px; color: var(--ink-2); }
   transition: box-shadow .25s var(--ease), transform .25s var(--ease);
 }
 .icard:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
-.icard .ico {
-  width: 44px; height: 44px; border-radius: 13px; background: var(--accent-wash);
-  display: flex; align-items: center; justify-content: center; margin-bottom: 16px;
+.icard .ico { margin-bottom: 18px; line-height: 0; }
+.icard .ico svg {
+  width: 30px; height: 30px; fill: none; stroke: var(--ink);
+  stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
 }
-.icard .ico svg { width: 22px; height: 22px; fill: var(--accent); }
 .icard h3 { font-size: 17px; margin-bottom: 7px; font-weight: 600; }
 .icard p { font-size: 14.5px; font-weight: 300; color: var(--ink); margin: 0; }
 
