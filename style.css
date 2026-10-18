@@ -129,7 +129,6 @@ p { margin: 0 0 16px; color: var(--ink-2); }
   border-radius: var(--radius-sm, 12px); border: 4px solid #fff;
   box-shadow: 0 10px 28px rgba(0,0,0,.18);
 }
-.hero-photo-fx { position: absolute; border-radius: calc(var(--radius-sm) - 4px); cursor: crosshair; }
 .hero-photo--back  { left: 0;  bottom: 0; }
 .hero-photo--front { right: 0; top: 0; }
 
