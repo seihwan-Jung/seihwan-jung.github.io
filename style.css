@@ -129,6 +129,9 @@ p { margin: 0 0 16px; color: var(--ink-2); }
   border-radius: var(--radius-sm, 12px); border: 4px solid #fff;
   box-shadow: 0 10px 28px rgba(0,0,0,.18);
 }
+.hero-photo { cursor: pointer; z-index: 1; transition: box-shadow .2s ease; }
+.hero-photo.is-front { z-index: 2; box-shadow: 0 14px 34px rgba(0,0,0,.24); }
+.hero-photo:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 .hero-photo--back  { left: 0;  bottom: 0; }
 .hero-photo--front { right: 0; top: 0; }
 
