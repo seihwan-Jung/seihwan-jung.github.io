@@ -136,7 +136,7 @@ p { margin: 0 0 16px; color: var(--ink-2); }
 
 /* a little robot that paces back and forth along the top edge of the photos */
 .robot {
-  position: absolute; left: 112px; top: -38px; width: 36px; height: 39px;
+  position: absolute; left: 112px; top: -32px; width: 36px; height: 33px;
   z-index: 3; pointer-events: none;
   animation: robot-walk 8s linear infinite;
 }
