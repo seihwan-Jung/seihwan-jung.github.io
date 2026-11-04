@@ -523,3 +523,142 @@ footer .f-links { display: flex; gap: 18px; font-size: 14.5px; }
   .pdfframe { height: 560px; }
   footer .f-grid { flex-direction: column; align-items: flex-start; }
 }
+
+/* ============================================================
+   ASCII / TERMINAL THEME
+   Black & white (~90%) with orange (~10%) as the only accent.
+   Everything below overrides the base styles above; delete this
+   whole block to get the previous look back.
+   ============================================================ */
+:root {
+  --mono:        ui-monospace, "SFMono-Regular", "JetBrains Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  --orange:      #ff5a00;
+  --orange-deep: #c24100;
+  --navy:        #000;
+  --accent:      var(--orange);
+  --accent-deep: var(--orange-deep);
+  --accent-wash: #f2f2f2;
+  --tint:        #f2f2f2;
+  --ink:         #000;
+  --ink-2:       #000;
+  --ink-3:       #000;
+  --line:        #000;
+  --radius:      0;
+  --radius-sm:   0;
+  --shadow:      none;
+  --shadow-lift: none;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+body { font-family: var(--mono); font-size: 15px; line-height: 1.7; }
+h1, h2, h3, h4 { letter-spacing: 0; line-height: 1.2; }
+a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+a:hover { color: var(--orange); }
+
+/* nav: "$ name   [Home] [CV] [Projects]" */
+.nav { background: #fff; backdrop-filter: none; -webkit-backdrop-filter: none; border-bottom: 1px solid #000; }
+.nav-name { font-weight: 700; letter-spacing: 0; text-decoration: none; }
+.nav-name::before { content: "$ "; color: var(--orange); }
+.nav-name:hover { opacity: 1; color: var(--ink); }
+.nav-links > li > a { border-radius: 0; font-weight: 400; font-size: 14px; text-decoration: none; }
+.nav-links > li > a::before { content: "["; }
+.nav-links > li > a::after  { content: "]"; }
+.nav-links > li > a:hover { background: #000; color: #fff; }
+.nav-links > li > a.active { background: none; color: var(--orange); font-weight: 700; }
+.has-sub > a::after { content: "]"; border: 0; margin: 0; transform: none; display: inline; }
+.subnav { border: 1px solid #000; border-radius: 0; box-shadow: none; }
+.subnav a { border-radius: 0; font-weight: 400; text-decoration: none; }
+.subnav a::before { content: "> "; color: var(--orange); }
+.subnav a:hover { background: #000; color: #fff; }
+
+/* hero */
+.prompt { font-size: 14px; margin-bottom: 8px; }
+.prompt span { color: var(--orange); font-weight: 700; }
+.ascii-name {
+  margin: 0 0 18px; font: 700 min(16px, 2.8vw)/1.05 var(--mono);
+  color: #000; white-space: pre; overflow: hidden;
+}
+.ascii-name i { font-style: normal; color: var(--orange); animation: blink 1.1s steps(1) infinite; }
+.hero h1 { font-size: 30px; margin-bottom: 16px; }
+.hero p { font-size: 15px; max-width: 58ch; }
+.hero p b, .hero p strong { font-weight: 700; }
+
+.hero-photo { border: 2px solid #000; filter: grayscale(1) contrast(1.05); }
+.hero-photo.is-front { filter: none; }
+.hero-photo:focus-visible { outline: 2px solid var(--orange); }
+
+/* chips: [ Email ] [ CV ] ... */
+.chip {
+  border: 1px solid #000; border-radius: 0; font-size: 14px; font-weight: 400;
+  background: #fff; color: #000; text-decoration: none;
+}
+.chip:hover { background: #000; color: #fff; border-color: #000; transform: none; }
+.chip-solid { background: #000; color: #fff; border-color: #000; font-weight: 700; }
+.chip-solid:hover { background: var(--orange); border-color: var(--orange); color: #000; }
+
+/* section titles: "## Title" + a dashed rule */
+.sec-label { letter-spacing: 0; }
+.sec-title { font-size: 26px; }
+.sec-title::before, .article h2::before { content: "## "; color: var(--orange); }
+.sec-title::after {
+  content: "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "; display: block; margin-top: 8px;
+  font-size: 13px; font-weight: 400; line-height: 1; letter-spacing: 0;
+  white-space: nowrap; overflow: hidden; color: #000;
+}
+.sec-intro { font-weight: 400; font-size: 15px; }
+.article h2 { font-size: 22px; }
+.article h2.h2-sub-size { font-size: 17px; }
+.article p, .video-compare figcaption.figcaption--body, .figure figcaption.figcaption--body { font-size: 15px; }
+.bullets li, .keystat .t { font-size: 15px; }
+.pagehead h1 { font-size: 32px; }
+
+/* cards */
+.icard, .work, .entry { border: 1px solid #000; border-radius: 0; box-shadow: none; }
+.icard:hover, .work:hover { box-shadow: none; transform: none; border-color: var(--orange); }
+.icard h3, .work h3, .entry h3, .tl-item h3 { font-weight: 700; }
+.work-thumb { background: #f2f2f2; border-right: 1px solid #000; }
+.work .tag { border-radius: 0; background: #000; color: #fff; letter-spacing: 0; }
+.more { font-weight: 700; white-space: nowrap; }
+.more::after { content: " ->"; }
+.work:hover .more { color: var(--orange); }
+.entry .badge { font-weight: 700; letter-spacing: 0; }
+
+/* timeline: dashed spine with "+" markers */
+.timeline::before { width: 0; background: none; border-left: 1px dashed #000; left: 7px; }
+.tl-item::before {
+  content: "+"; left: -29px; top: 2px; width: auto; height: auto;
+  border: 0; border-radius: 0; background: #fff;
+  color: var(--orange); font-weight: 700; font-size: 20px; line-height: 1;
+}
+.tl-when { letter-spacing: 0; font-weight: 700; }
+.tl-item ul { list-style: none; padding-left: 0; }
+.tl-item li { position: relative; padding-left: 20px; }
+.tl-item li::before { content: "-"; position: absolute; left: 4px; color: var(--orange); font-weight: 700; }
+
+/* footer: inverted bar */
+footer { background: #000; border-top: 0; color: #fff; }
+footer p, footer .f-name { color: #fff; }
+footer .f-name::before { content: "$ "; color: var(--orange); }
+footer a { color: #fff; }
+footer a:hover { color: var(--orange); }
+
+/* inner pages */
+.pagehead { border-bottom: 1px solid #000; }
+.keystat { background: none; border: 1px solid #000; border-left: 5px solid var(--orange); }
+.spec { border: 1px solid #000; box-shadow: none; }
+.bullets li::before { border-radius: 0; }
+.article code { background: #f2f2f2; color: var(--orange-deep); border-radius: 0; }
+.article > section + section { border-top: 1px dashed #000; }
+.figure figcaption, .video-compare figcaption, .figrow figcaption { color: #000; }
+.video-compare video { border: 1px solid #000; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ascii-name i { animation: none; }
+}
+@media (max-width: 720px) {
+  .hero h1 { font-size: 24px; }
+  .sec-title { font-size: 21px; }
+  .article h2 { font-size: 19px; }
+  .pagehead h1 { font-size: 25px; }
+  .subnav a:hover { background: #000; color: #fff; }
+}
