@@ -134,6 +134,30 @@ p { margin: 0 0 16px; color: var(--ink-2); }
 .hero-photo--back  { left: 0;  bottom: 0; }
 .hero-photo--front { right: 0; top: 0; }
 
+/* a little robot that paces back and forth along the top edge of the photos */
+.robot {
+  position: absolute; left: 112px; top: -38px; width: 36px; height: 39px;
+  z-index: 3; pointer-events: none;
+  animation: robot-walk 8s linear infinite;
+}
+.robot svg { display: block; overflow: visible; animation: robot-bob .5s steps(1) infinite; }
+.robot-a { animation: robot-step .5s steps(1) infinite; }
+.robot-b { animation: robot-step-b .5s steps(1) infinite; }
+@keyframes robot-step   { 0% { opacity: 1; } 50% { opacity: 0; } }
+@keyframes robot-step-b { 0% { opacity: 0; } 50% { opacity: 1; } }
+@keyframes robot-bob  { 0% { transform: translateY(0); } 50% { transform: translateY(-1px); } }
+@keyframes robot-walk {
+  0%   { transform: translateX(0)     scaleX(1);  }
+  47%  { transform: translateX(140px) scaleX(1);  }
+  50%  { transform: translateX(140px) scaleX(-1); }
+  97%  { transform: translateX(0)     scaleX(-1); }
+  100% { transform: translateX(0)     scaleX(1);  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .robot, .robot svg, .robot-a, .robot-b { animation: none; }
+  .robot-b { display: none; }
+}
+
 /* quick links */
 .quicklinks { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
 .chip {
