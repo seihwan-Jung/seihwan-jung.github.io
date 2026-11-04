@@ -653,3 +653,13 @@ footer a:hover { color: var(--orange); }
   .pagehead h1 { font-size: 25px; }
   .subnav a:hover { background: #000; color: #fff; }
 }
+
+/* project card 1: the two-video box fills the full card height.
+   Flex ratios match the clips' shapes (Demo 9:16 portrait, passive 4:3), so
+   at ~240px tall nothing is cropped; a slightly taller card crops only a sliver. */
+@media (min-width: 641px) {
+  .work-thumb--videos { flex: 0 0 457px; height: auto; min-height: 240px; align-self: stretch; align-items: stretch; }
+  .work-thumb--videos video { flex: 1 1 0; width: auto; min-width: 0; height: auto; object-fit: cover; }
+  .work-thumb--videos video:first-child { flex-grow: .5625; }
+  .work-thumb--videos video:last-child  { flex-grow: 1.3333; }
+}
