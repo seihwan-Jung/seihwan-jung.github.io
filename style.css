@@ -548,7 +548,6 @@ footer .f-links { display: flex; gap: 18px; font-size: 14.5px; }
   --shadow:      none;
   --shadow-lift: none;
 }
-@keyframes blink { 50% { opacity: 0; } }
 
 body { font-family: var(--mono); font-size: 15px; line-height: 1.7; }
 h1, h2, h3, h4 { letter-spacing: 0; line-height: 1.2; }
@@ -574,11 +573,6 @@ a:hover { color: var(--orange); }
 /* hero */
 .prompt { font-size: 14px; margin-bottom: 8px; }
 .prompt span { color: var(--orange); font-weight: 700; }
-.ascii-name {
-  margin: 0 0 18px; font: 700 min(16px, 2.8vw)/1.05 var(--mono);
-  color: #000; white-space: pre; overflow: hidden;
-}
-.ascii-name i { font-style: normal; color: var(--orange); animation: blink 1.1s steps(1) infinite; }
 .hero h1 { font-size: 30px; margin-bottom: 16px; }
 .hero p { font-size: 15px; max-width: 58ch; }
 .hero p b, .hero p strong { font-weight: 700; }
@@ -652,9 +646,6 @@ footer a:hover { color: var(--orange); }
 .figure figcaption, .video-compare figcaption, .figrow figcaption { color: #000; }
 .video-compare video { border: 1px solid #000; }
 
-@media (prefers-reduced-motion: reduce) {
-  .ascii-name i { animation: none; }
-}
 @media (max-width: 720px) {
   .hero h1 { font-size: 24px; }
   .sec-title { font-size: 21px; }
