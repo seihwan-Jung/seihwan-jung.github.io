@@ -63,18 +63,14 @@
 
 <!-- ============ HERO BANNER ============ -->
 <header class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="prompt" aria-hidden="true"><span>$</span> whoami</div>
-      <h1>Hello, I'm Seihwan!</h1>
-      <p>
-        I'm an undergraduate student in <b>Mechanical Engineering</b> at <b>Seoul National
-        University</b>. I'm interested in designing robotic hands
-        and in the data that drives them, in simulation and on real hardware.
-      </p>
-      <p style="color:var(--ink); font-weight:600; max-width:none;">
-        From Winter Semester 2026/27 I'll be an exchange student at TU Berlin
-      </p>
+  <div class="wrap">
+    <h1>Hello,<br>I'm Seihwan!</h1>
+
+    <div class="hero-cols">
+      <div class="hero-text">
+        <p>I'm an undergraduate student in <b>Mechanical Engineering</b> at <b>Seoul National University</b>. I'm interested in designing robotic hands and in the data that drives them, in simulation and on real hardware.</p>
+        <p class="hero-note">From Winter Semester 2026/27 I'll be an exchange student at TU Berlin</p>
+      </div>
 
       <!-- EDIT: fill in the href="#" links, or delete chips you don't use -->
       <div class="quicklinks">
@@ -96,10 +92,13 @@
         </a>
       </div>
     </div>
-    <div class="hero-photos">
+
+    <div class="strip" role="group" aria-label="Photographs">
       <div class="robot" aria-hidden="true"><svg viewBox="0 2 12 11" width="36" height="33" shape-rendering="crispEdges"><g class="robot-a"><rect x="1" y="2" width="10" height="1" fill="#000"/><rect x="1" y="3" width="2" height="1" fill="#000"/><rect x="3" y="3" width="2" height="1" fill="#fff"/><rect x="5" y="3" width="2" height="1" fill="#000"/><rect x="7" y="3" width="2" height="1" fill="#fff"/><rect x="9" y="3" width="2" height="1" fill="#000"/><rect x="1" y="4" width="2" height="1" fill="#000"/><rect x="3" y="4" width="2" height="1" fill="#fff"/><rect x="5" y="4" width="2" height="1" fill="#000"/><rect x="7" y="4" width="2" height="1" fill="#fff"/><rect x="9" y="4" width="2" height="1" fill="#000"/><rect x="1" y="5" width="1" height="1" fill="#000"/><rect x="2" y="5" width="1" height="1" fill="#fff"/><rect x="3" y="5" width="2" height="1" fill="#000"/><rect x="5" y="5" width="2" height="1" fill="#fff"/><rect x="7" y="5" width="2" height="1" fill="#000"/><rect x="9" y="5" width="1" height="1" fill="#fff"/><rect x="10" y="5" width="1" height="1" fill="#000"/><rect x="1" y="6" width="10" height="1" fill="#000"/><rect x="3" y="7" width="6" height="1" fill="#000"/><rect x="1" y="8" width="4" height="1" fill="#000"/><rect x="5" y="8" width="2" height="1" fill="#fff"/><rect x="7" y="8" width="2" height="1" fill="#000"/><rect x="1" y="9" width="4" height="1" fill="#000"/><rect x="5" y="9" width="2" height="1" fill="#fff"/><rect x="7" y="9" width="4" height="1" fill="#000"/><rect x="3" y="10" width="8" height="1" fill="#000"/><rect x="3" y="11" width="2" height="1" fill="#000"/><rect x="7" y="11" width="2" height="1" fill="#000"/><rect x="2" y="12" width="3" height="1" fill="#000"/></g><g class="robot-b"><rect x="1" y="2" width="10" height="1" fill="#000"/><rect x="1" y="3" width="2" height="1" fill="#000"/><rect x="3" y="3" width="2" height="1" fill="#fff"/><rect x="5" y="3" width="2" height="1" fill="#000"/><rect x="7" y="3" width="2" height="1" fill="#fff"/><rect x="9" y="3" width="2" height="1" fill="#000"/><rect x="1" y="4" width="2" height="1" fill="#000"/><rect x="3" y="4" width="2" height="1" fill="#fff"/><rect x="5" y="4" width="2" height="1" fill="#000"/><rect x="7" y="4" width="2" height="1" fill="#fff"/><rect x="9" y="4" width="2" height="1" fill="#000"/><rect x="1" y="5" width="1" height="1" fill="#000"/><rect x="2" y="5" width="1" height="1" fill="#fff"/><rect x="3" y="5" width="2" height="1" fill="#000"/><rect x="5" y="5" width="2" height="1" fill="#fff"/><rect x="7" y="5" width="2" height="1" fill="#000"/><rect x="9" y="5" width="1" height="1" fill="#fff"/><rect x="10" y="5" width="1" height="1" fill="#000"/><rect x="1" y="6" width="10" height="1" fill="#000"/><rect x="3" y="7" width="6" height="1" fill="#000"/><rect x="3" y="8" width="2" height="1" fill="#000"/><rect x="5" y="8" width="2" height="1" fill="#fff"/><rect x="7" y="8" width="4" height="1" fill="#000"/><rect x="1" y="9" width="4" height="1" fill="#000"/><rect x="5" y="9" width="2" height="1" fill="#fff"/><rect x="7" y="9" width="4" height="1" fill="#000"/><rect x="1" y="10" width="8" height="1" fill="#000"/><rect x="3" y="11" width="2" height="1" fill="#000"/><rect x="7" y="11" width="2" height="1" fill="#000"/><rect x="7" y="12" width="3" height="1" fill="#000"/></g></svg></div>
-      <img tabindex="0" class="hero-photo hero-photo--back" src="media1/profile_2.jpg" alt="Seihwan Jung at a mountain lake in the Swiss Alps" width="560" height="700">
-      <img tabindex="0" class="hero-photo hero-photo--front" src="media1/profile_1.jpg" alt="Seihwan Jung" width="560" height="700">
+      <figure style="--ar:1.3333"><img src="media3/grid_valley.jpg" alt="Village in an alpine valley below a snow-dusted mountain; grid lines converge on a tiny walker on the path" width="1600" height="1200" loading="eager"><figcaption><b>01</b><span>Valley</span></figcaption></figure>
+      <figure style="--ar:0.75"><img src="media3/grid_walk.jpg" alt="Seihwan with a backpack on a path, looking toward a mountain valley; grid lines meet at his head" width="900" height="1200" loading="lazy"><figcaption><b>02</b><span>Walk</span></figcaption></figure>
+      <figure style="--ar:0.75"><img src="media3/grid_records.jpg" alt="Record shop shelves with Madonna and Oasis sleeves; grid lines converge on the Oasis cover" width="900" height="1200" loading="lazy"><figcaption><b>03</b><span>Records</span></figcaption></figure>
+      <figure style="--ar:0.5625"><img src="media3/grid_lake.jpg" alt="Wooden posts and a pier on a lake under clouds and mountains; a grid line runs along the post tops" width="675" height="1200" loading="lazy"><figcaption><b>04</b><span>Lake</span></figcaption></figure>
     </div>
   </div>
 </header>
@@ -109,8 +108,7 @@
   <div class="wrap">
   
     <h2 class="sec-title">Project Interests</h2>
-    <p class="sec-intro">
-      Hardware & software
+    <p class="sec-intro">Hardware &amp; software</p>
 
     <div class="icards">
       <div class="icard">
@@ -272,21 +270,5 @@
   </div>
 </footer>
 
-<script>
-// Click (or Enter/Space) a hero photo to bring it to the front.
-(function () {
-  var photos = document.querySelectorAll('.hero-photos .hero-photo');
-  function raise(p) {
-    for (var i = 0; i < photos.length; i++) photos[i].classList.toggle('is-front', photos[i] === p);
-  }
-  for (var i = 0; i < photos.length; i++) (function (p) {
-    p.addEventListener('click', function () { raise(p); });
-    p.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); raise(p); }
-    });
-  })(photos[i]);
-  raise(document.querySelector('.hero-photo--front'));
-})();
-</script>
 </body>
 </html>
