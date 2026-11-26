@@ -215,7 +215,7 @@ p { margin: 0 0 16px; color: var(--ink-2); }
 .work-thumb--videos video { flex: 0 0 auto; width: auto; height: 100%; display: block; }
 
 .work-thumb--rotvideo { flex: 0 0 300px; height: 240px; padding: 0; position: relative; overflow: hidden; background: #fff; }
-.work-thumb--empty { flex: 0 0 300px; height: 240px; padding: 0; }
+.work-thumb--plot { flex: 0 0 auto; height: 240px; aspect-ratio: 730 / 470; padding: 0; background: #fff; }
 .work-thumb--rotvideo video {
   position: absolute; top: 50%; left: 50%;
   width: 240px; height: 300px; object-fit: cover; object-position: left center;
@@ -677,7 +677,8 @@ footer a:hover { color: var(--orange); }
   .band > .wrap > .sec-title { margin-bottom: 28px; }
   .work { flex-direction: column; align-items: stretch; gap: 16px; }
   .work-thumb--videos { flex: none; width: 100%; max-width: 457px; height: auto; aspect-ratio: 457 / 240; }
-  .work-thumb--rotvideo, .work-thumb--empty { flex: none; width: 300px; max-width: 100%; }
+  .work-thumb--rotvideo { flex: none; width: 300px; max-width: 100%; }
+  .work-thumb--plot { flex: none; height: auto; width: 100%; max-width: 373px; }
   .tl-item, .entry { grid-template-columns: 1fr; row-gap: 6px; }
   .tl-item > *, .tl-item > .tl-when { grid-column: 1; grid-row: auto; }
 }
